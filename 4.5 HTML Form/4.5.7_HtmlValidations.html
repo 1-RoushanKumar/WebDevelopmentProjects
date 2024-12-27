@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Validation Example</title>
+  </head>
+  <body>
+    <h1>Form with HTML Validations</h1>
+
+    <!-- Form to demonstrate HTML5 validations -->
+    <form action="/submit" method="POST">
+      <!-- Username Field -->
+      <div>
+        <label for="username">Username (required):</label>
+        <!-- 'text' input type, for entering plain text -->
+        <!-- 'required' validation ensures this field must be filled before submission -->
+        <input
+          type="text"
+          id="username"
+          name="username"
+          required
+          placeholder="Enter your username"
+        />
+        <br />
+        <small>This field is required.</small>
+      </div>
+
+      <!-- Email Field -->
+      <div>
+        <!-- 'email' input type, ensures user enters a valid email address -->
+        <!-- 'required' validation ensures this field must be filled before submission -->
+        <!-- 'pattern' validation for ensuring the email format is correct -->
+        <label for="email">Email (must be a valid email):</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="Enter
+        your email"
+          pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+        <br />
+        <small
+          >This field must be a valid email address (e.g.,
+          user@example.com).</small
+        >
+      </div>
+
+      <!-- Password Field -->
+      <div>
+        <!-- 'password' input type, hides the entered characters -->
+        <!-- 'required' validation ensures this field must be filled before submission -->
+        <!-- 'minlength' validation requires the password to be at least 6 characters long -->
+        <label for="password">Password (min 6 characters):</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          required
+          minlength="6"
+          placeholder="Enter your password"
+        />
+        <br />
+        <small>Password must be at least 6 characters long.</small>
+      </div>
+
+      <!-- Confirm Password Field -->
+      <!-- 'password' input type, hides the entered characters -->
+      <!-- 'required' validation ensures this field must be filled before submission -->
+      <!-- 'minlength' validation ensures the confirmation password is at least 6 characters long -->
+      <div>
+        <label for="confirm_password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+          required
+          minlength="6"
+          placeholder="Confirm your password"
+        />
+        <br />
+        <small>Must match the password entered above.</small>
+      </div>
+
+      <!-- Age Field -->
+      <!-- 'number' input type, ensures the value entered is numeric -->
+      <!-- 'required' validation ensures this field must be filled before submission -->
+      <!-- 'min' validation ensures that the number entered must be greater than or equal to 18 -->
+      <!-- 'max' validation ensures that the number entered must be less than or equal to 100 -->
+      <div>
+        <label for="age">Age (18-100):</label>
+        <input
+          type="number"
+          id="age"
+          name="age"
+          required
+          min="18"
+          max="100"
+          placeholder="Enter your age"
+        />
+        <br />
+        <small>Age must be between 18 and 100.</small>
+      </div>
+
+      <!-- Phone Number Field -->
+      <!-- 'tel' input type, meant for phone number input -->
+      <!-- 'required' validation ensures this field must be filled before submission -->
+      <!-- 'pattern' validation ensures phone number is in the correct format (e.g., 123-456-7890) -->
+      <div>
+        <label for="phone">Phone Number:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          required
+          placeholder="Enter your phone number"
+          pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+        />
+        <br />
+        <small>Phone number format: 123-456-7890.</small>
+      </div>
+
+      <!-- Date of Birth Field -->
+      <!-- 'date' input type, ensures the value entered is a valid date -->
+      <!-- 'required' validation ensures this field must be filled before submission -->
+      <div>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+        <br />
+        <small>Select your date of birth.</small>
+      </div>
+
+      <!-- Submit Button -->
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+    <form action="/rOushan">
+      <div>
+        <label for="username">Enter User Name:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="username"
+          name="username"
+        />
+      </div>
+      <div>
+        <label for="password">Enter password:</label>
+        <input type="password" id="password" placeholder="password" />
+      </div>
+      <div>
+        <label for="Date">Date:</label>
+        <input type="date" id="Date" name="date" />
+      </div>
+
+      <!-- Radio buttons for gender -->
+      <div>
+        <label>Gender:</label>
+        <input type="radio" id="Male" name="gender" value="M" />
+        <label for="Male">M</label>
+        <input type="radio" id="Female" name="gender" value="F" />
+        <label for="Female">F</label>
+        <input type="radio" id="Other" name="gender" />
+        <label for="Other">Other</label>
+      </div>
+
+      <!-- Checkbox example with multiple options -->
+      <div>
+        <label>Select your preferences:</label><br />
+        <input
+          type="checkbox"
+          id="subscribe"
+          name="preferences"
+          value="newsletter"
+        />
+        <label for="subscribe">Subscribe to Newsletter</label><br />
+
+        <input type="checkbox" id="terms" name="preferences" value="terms" />
+        <label for="terms">Agree to Terms and Conditions</label><br />
+      </div>
+
+      <!-- Select dropdown example -->
+      <div>
+        <label for="country">Select your country:</label>
+        <select id="country" name="country">
+          <option value="usa">United States</option>
+          <option value="uk">United Kingdom</option>
+          <option value="india">India</option>
+          <option value="australia">Australia</option>
+        </select>
+      </div>
+
+      <!-- Range input example -->
+      <div>
+        <label for="age">Select your age:</label>
+        <input
+          type="range"
+          id="age"
+          name="age"
+          min="18"
+          max="100"
+          step="1"
+          value="25"
+        />
+        <span>Age: 25</span>
+        <br />
+        <small>Age range from 18 to 100</small>
+      </div>
+
+      <!-- Number input example -->
+      <div>
+        <label for="quantity">Enter quantity:</label>
+        <input
+          type="number"
+          id="quantity"
+          name="quantity"
+          min="1"
+          max="100"
+          value="1"
+        />
+        <br />
+        <small>Enter a number between 1 and 100</small>
+      </div>
+
+      <!-- Textarea input example -->
+      <div>
+        <label for="comments">Enter your comments:</label><br />
+        <textarea
+          id="comments"
+          name="comments"
+          rows="4"
+          cols="50"
+          placeholder="Write your comments here..."
+        ></textarea>
+        <br />
+        <small>Use this space for additional comments or feedback.</small>
+      </div>
+
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
+
+<!-- 
+Radio Buttons:
+- Single selection.
+- Suitable when you want the user to choose only one option from a set.
+
+Checkboxes:
+- Multiple selection.
+- Suitable when you want the user to select multiple options.
+
+Select Dropdown:
+- Allows the user to select a single option from a dropdown list.
+- Useful when you have many options but don't want to clutter the form with too many radio buttons or checkboxes.
+
+Range Input:
+- Allows the user to select a value within a defined range.
+- In this case, the user can select an age between 18 and 100.
+
+Number Input:
+- Allows the user to enter a number.
+- It ensures that only numbers are accepted.
+- `min`, `max`, and `value` can be used to define the range and default value.
+
+Textarea:
+- Allows the user to enter multi-line text.
+- Useful for longer inputs like comments, reviews, or descriptions.
+- `rows` and `cols` control the size of the text area, but users can resize it if needed.
+-->

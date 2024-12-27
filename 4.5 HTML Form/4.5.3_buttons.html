@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <!-- Start of the form with action specifying the path to submit the data -->
+    <form action="/rOushan">
+      <!-- Username input field -->
+      <div>
+        <label for="username">Enter User Name:</label>
+        <!-- Text input for the username with placeholder text -->
+        <input type="text" id="username" placeholder="username" />
+      </div>
+
+      <!-- Password input field -->
+      <div>
+        <label for="password">Enter password:</label>
+        <!-- Password input for the password with placeholder text -->
+        <input type="password" id="password" placeholder="password" />
+      </div>
+
+      <!-- Date input field -->
+      <div>
+        <label for="Date">Date:</label>
+        <!-- Date picker input for selecting a date -->
+        <input type="date" id="Date" />
+      </div>
+
+      <!-- A button that does not submit the form. It is just for an action inside the form -->
+      <button type="button">Do not submit button inside the form</button>
+
+      <br />
+
+      <!-- Submit button that submits the form to the action URL -->
+      <button>Submit</button>
+
+      <br />
+
+      <!-- Another way to create a submit button with a value text -->
+      <input type="submit" value="ClickMe!!" />
+    </form>
+
+    <!-- A button outside the form, it does not trigger any form submission or action -->
+    <button>OutsideForm</button>
+  </body>
+</html>

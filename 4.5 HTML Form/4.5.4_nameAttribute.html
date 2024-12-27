@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Form</h1>
+
+    <!-- without name attribute url: http://127.0.0.1:3000/rOushan? where /rOushan is action of form-->
+    <form action="/rOushan">
+      <div>
+        <label for="username">Enter User Name:</label>
+
+        <input type="text" id="username" placeholder="username" name="username" />
+        <!-- After adding name attribute we get this url after Submitting http://127.0.0.1:3000/rOushan?username=Roushan -->
+      </div>
+
+      <div>
+        <label for="password">Enter password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="password"
+          name="password"
+        />
+      </div>
+
+      <div>
+        <label for="Date">Date:</label>
+
+        <input type="date" id="Date" name="date" />
+        <!-- After adding name attribute to each input url: http://127.0.0.1:3000/rOushan?password=1234&date=2024-12-04 -->
+      </div>
+      <button type="button">Do not submit button inside the form</button>
+
+      <br />
+
+      <button>Submit</button>
+
+      <br />
+
+      <input type="submit" value="ClickMe!!" />
+    </form>
+
+    <hr />
+
+    <button>OutsideForm</button>
+  </body>
+</html>

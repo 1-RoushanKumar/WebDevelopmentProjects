@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for character encoding and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title> <!-- The title of the webpage, displayed in the browser tab -->
+    <style>
+      /* Add borders to tables, rows, and cells */
+      table {
+        border-collapse: collapse; /* Ensure borders do not overlap */
+        width: 100%; /* Full-width table */
+      }
+      th, td {
+        border: 1px solid black; /* Add border around each cell */
+        text-align: center; /* Align text to the left */
+        padding: 8px; /* Add padding inside cells */
+      }
+      th {
+        background-color: #f2f2f2; /* Light gray background for headers */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main heading introducing the topic with a clickable hyperlink to a Wikipedia article -->
+    <h1>
+      Heaviest living animals
+      <a
+        href="https://en.wikipedia.org/wiki/Largest_and_heaviest_animals#:~:text=%5B1%5D-,Heaviest%20living%20animals,-%5Bedit%5D"
+        >Link</a
+      >
+    </h1>
+
+    <!-- Section for the first version of the table displaying animal data -->
+    <h3>1st_Version</h3>
+    <table>
+      <thead>
+        <!-- Table headers for organizing the data into meaningful columns -->
+        <th>Rank</th> <!-- The rank of the animal based on size or mass -->
+        <th>Animal</th> <!-- Name of the animal -->
+        <th>AveragMass[tonnes]</th> <!-- Average mass of the animal in tonnes -->
+        <th>AverageLength[m(ft)]</th> <!-- Average length of the animal in meters and feet -->
+      </thead>
+      <tbody>
+        <!-- Row 1: Data for the Blue whale -->
+        <tr>
+          <td>1</td> <!-- Rank of the animal -->
+          <td>Blue whale</td> <!-- Name of the animal -->
+          <td>110</td> <!-- Average mass in tonnes -->
+          <td>24 (79)</td> <!-- Length in meters (feet in parentheses) -->
+        </tr>
+        <!-- Row 2: Data for the North Pacific right whale -->
+        <tr>
+          <td>2</td>
+          <td>North Pacific right whale</td>
+          <td>60</td>
+          <td>15.5 (51)</td>
+        </tr>
+        <!-- Row 3: Data for the Southern right whale -->
+        <tr>
+          <td>3</td>
+          <td>Southern right whale</td>
+          <td>58</td>
+          <td>15.25 (50)</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Section for the second version of the table with more detailed columns for length -->
+    <h3>2nd_Version</h3>
+
+    <table>
+      <thead>
+        <tr>
+          <!-- Headers for rank, animal, average mass, and a breakdown of average length -->
+          <th rowspan="2">Rank</th> <!-- Rank spans two rows to unify columns -->
+          <th rowspan="2">Animal</th> <!-- Animal name spans two rows -->
+          <th rowspan="2">AveragMass[tonnes]</th> <!-- Mass spans two rows -->
+          <th colspan="2">AverageLength</th> <!-- Separate columns for length in meters and feet -->
+        </tr>
+        <tr>
+          <th>Metre</th> <!-- Length in meters -->
+          <th>Feet</th> <!-- Length in feet -->
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Row 1: Data for the Blue whale with separate length columns -->
+        <tr>
+          <td>1</td>
+          <td>Blue whale</td>
+          <td>110</td>
+          <td>24</td>
+          <td>79</td>
+        </tr>
+        <!-- Row 2: Data for the North Pacific right whale -->
+        <tr>
+          <td>2</td>
+          <td>North Pacific right whale</td>
+          <td>60</td>
+          <td>15.5</td>
+          <td>51</td>
+        </tr>
+        <!-- Row 3: Data for the Southern right whale -->
+        <tr>
+          <td>3</td>
+          <td>Southern right whale</td>
+          <td>58</td>
+          <td>15.25</td>
+          <td>50</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
